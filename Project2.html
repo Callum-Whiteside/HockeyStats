@@ -1,0 +1,57 @@
+<html>
+<head>
+	<meta charset="UTF8"></meta>
+    <script src="Project2.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="Project2.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<header>Compare Hockey Careers</header>
+<div class="instructions">
+	<p>
+	<b><u>Please go to <a href="https://cors-anywhere.herokuapp.com" target="_blank" title="safe">https://cors-anywhere.herokuapp.com</a> and click "request temporary access to the demo server" in order to get the data from the nhl api. If you do not click this the program will not work.</u></b>
+	Enter two player's full names into the search boxes below and press submit 
+	Once you've pressed submit two players should show up below.
+	Once those two players have shown up,
+	you can press compare to compare the two players to see who has had a better career.
+	</p>
+</div>
+<div class="input">
+<div class="title">Enter player information below:</div>
+	<div class="container">
+		<div class="item">First Player Name:<input type="text" id="playerName1" placeholder="example: Wayne Gretzky"></div>
+		<div class="item"><button onclick="compare()">Compare</button></div>
+		<div class="item">Second Player Name:<input type="text" id="playerName2" placeholder="example: Connor Mcdavid"></div>
+		<div class="item"><button onclick="submit()">Submit</button></div>
+	</div>
+</div>
+
+<br><br>
+
+<div id="output">
+<div class="title">Results:</div>
+	<table border = "1px">
+		<tr><td>Name:</td><td id="resultName"></td><td> </td><td id="resultName2"></td></tr>
+		<tr><td></td><td><img id="ratingImg"></td><td> </td><td><img id="ratingImg2"></td></tr>
+		<tr><td>Team:</td><td id="resultTeam"></td><td> </td><td id="resultTeam2"></td></tr>
+		<tr><td>Nationality:</td><td id="resultNationanality"></td><td> </td><td id="resultNationanality2"></td></tr>
+		<tr><td>Games Played:</td><td id="resultGames"></td><td id="compareGames"> </td><td id="resultGames2"></td></tr>
+		<tr><td>Career goals:</td><td id="resultCareerGoals"></td><td id="compareGoals"> </td><td id="resultCareerGoals2"></td></tr>
+		<tr><td>Career assists:</td><td id="resultCareerAssists"></td><td id="compareAssists"> </td><td id="resultCareerAssists2"></td></tr>
+		<tr><td>Career points:</td><td id="resultCareerPoints"></td><td id="comparePoints"> </td><td id="resultCareerPoints2"></td></tr>
+		<tr><td>Career shooting %:</td><td id="resultCareerPer"></td><td id="comparePer"> </td><td id="resultCareerPer2"></td></tr>
+		<tr><td>Goals per game:</td><td id="resultGoals"></td><td id="compareGoalsPer"> </td><td id="resultGoals2"></td></tr>
+		<tr><td>Points per game:</td><td id="resultPoints"></td><td id="compareAssistsPer"> </td><td id="resultPoints2"></td></tr>
+	</table>
+</div>
+
+<div id="comparator">
+	<p id="resultCompare"></p>
+</div>
+
+<br><br>
+<div id="raw">
+</div>
+
+</body>
+</html>

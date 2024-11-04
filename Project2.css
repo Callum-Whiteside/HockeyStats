@@ -1,0 +1,79 @@
+.input {
+    border: 1px solid black;
+    background: rgb(230, 230, 250);
+    padding: 10px;
+    width: 500px;
+    margin-left:auto;
+    margin-right: auto;
+  }
+
+  .instructions {
+    border: 1px solid black;
+    background: rgb(240, 230, 230);
+    padding: 10px;
+    width: 500px;
+    text-align:center;
+    margin-left:auto;
+    margin-right: auto;
+  }
+
+  body{
+    background-image: url(https://webhome.csc.uvic.ca/~callumw/Ice.jpg);
+    background-repeat: repeat;
+  }
+
+  header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    width: max-content;
+    font-size: 50px;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  
+  .title {
+    border-bottom: 1px solid darkgray;
+    margin-bottom: 5px;
+  }
+  
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  
+  #output {
+    display:none;
+    border: 1px solid black;
+    background: rgb(240, 240, 255);
+    padding: 10px;
+    width: max-content;
+    margin-left:auto;
+    margin-right: auto;
+  }
+
+  #comparator{
+    display: none;
+  }
+
+  #resultCompare {
+    border: 1px solid black;
+    background: rgb(220, 240, 230);
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+  }
+  
+  td {
+    vertical-align: top;
+    padding: 2px;
+  }
+  
+  img {
+    border: 1px solid black;
+  }
